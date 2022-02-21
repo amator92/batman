@@ -196,6 +196,7 @@ h1, h2, h3, p {
 
 .logo {
   animation: zoomIn 1s;
+  image-rendering: optimizeQuality;
 }
 
 @keyframes zoomIn {
@@ -334,10 +335,10 @@ h1, h2, h3, p {
   .navigation {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -240px;
     bottom: 0;
     width: 240px;
-    transform: translateX(-240px);
+    transform: translateX(0);
     background-color: #260707;
     flex-direction: column;
     justify-content: flex-start;
@@ -348,7 +349,7 @@ h1, h2, h3, p {
   }
 
   .navigation_active {
-    transform: translateX(0);
+    transform: translateX(240px);
   }
 
   .navigation__list {
